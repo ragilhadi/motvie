@@ -1,0 +1,46 @@
+@import "../../base.scss";
+
+.footer {
+  background-color: $lightbackground;
+  padding: 2.5% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  h3 {
+    color: $terneryColor;
+    font-size: $header-3;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+
+  .moviedb {
+    width: 150px;
+    .logo {
+      width: 150px;
+    }
+  }
+
+  .description {
+    width: 35%;
+    p {
+      color: $textGray;
+      word-break: break-word;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+  }
+
+  .contact {
+    position: relative;
+    a {
+      color: $textGray;
+      font-weight: 400;
+    }
+    p {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
