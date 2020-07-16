@@ -1,14 +1,14 @@
 @import "../../base.scss";
 
 .footer {
-  background-color: $lightbackground;
+  background-color: $terneryColor;
   padding: 2.5% 5%;
   display: flex;
   justify-content: space-between;
   align-content: center;
 
   h3 {
-    color: $terneryColor;
+    color: $backgroundBase;
     font-size: $header-3;
     font-weight: 600;
     margin-bottom: 1.25rem;
@@ -24,7 +24,7 @@
   .description {
     width: 35%;
     p {
-      color: $textGray;
+      color: $backgroundBase;
       word-break: break-word;
       font-weight: 400;
       font-size: 1rem;
@@ -34,10 +34,11 @@
   .contact {
     position: relative;
     a {
-      color: $textGray;
+      color: $backgroundBase;
       font-weight: 400;
     }
     p {
+      color: $backgroundBase;
       position: absolute;
       bottom: 0;
       right: 0;

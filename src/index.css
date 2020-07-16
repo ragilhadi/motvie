@@ -131,3 +131,7 @@ table {
 html * {
   font-family: Montserrat;
 }
+
+body {
+  background-color: #f4f6ff;
+}
