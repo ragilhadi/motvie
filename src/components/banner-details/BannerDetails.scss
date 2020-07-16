@@ -1,0 +1,90 @@
+@import "../../base.scss";
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 2.5% 5%;
+
+  .banner-details {
+    width: 60%;
+
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+
+      .year {
+        font-weight: 600;
+      }
+    }
+
+    .genre-duration {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .genre-duration-detail {
+      display: flex;
+      align-content: center;
+      align-items: center;
+
+      &__text {
+        font-weight: 500;
+        margin-left: 0.5rem;
+        margin-right: 2rem;
+      }
+    }
+
+    .rating-trailer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .rating-trailer-detail {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      margin-right: 3rem;
+
+      &__text {
+        color: black;
+        margin-left: 1rem;
+        font-weight: 700;
+      }
+    }
+    .little-circle {
+      height: 1rem;
+      width: 1rem;
+      background-color: $terneryColor;
+      border-radius: 9999px;
+    }
+    .rounded-icon {
+      background-color: $terneryColor;
+      display: flex;
+      height: 4rem;
+      width: 4rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      color: $backgroundBase;
+      p {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+    }
+
+    .description {
+      margin-top: 3rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  .banner-poster {
+    height: inherit;
+    width: 200px;
+    background-color: $terneryColor;
+  }
+}
