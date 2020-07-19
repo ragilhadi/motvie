@@ -40,6 +40,7 @@
         font-weight: 500;
         margin-left: 0.5rem;
         margin-right: 2rem;
+        font-size: 1.25rem;
       }
     }
 
@@ -48,17 +49,30 @@
       justify-content: flex-start;
       align-items: center;
       margin-top: 2rem;
+      @include respon(phone) {
+        justify-content: space-between;
+      }
     }
     .rating-trailer-detail {
       display: flex;
       align-content: center;
       align-items: center;
       margin-right: 3rem;
+      @include respon(phone) {
+        margin-right: 0;
+      }
 
       &__text {
         color: black;
         margin-left: 1rem;
         font-weight: 700;
+        @include respon(phone) {
+          font-size: 1rem;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
     .little-circle {
@@ -76,9 +90,16 @@
       justify-content: center;
       border-radius: 9999px;
       color: $backgroundBase;
+      @include respon(phone) {
+        height: 3rem;
+        width: 3rem;
+      }
       p {
         font-size: 1.25rem;
         font-weight: 700;
+        @include respon(phone) {
+          font-size: 1rem;
+        }
       }
     }
 
@@ -90,9 +111,19 @@
   }
 
   .banner-poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: inherit;
-    width: 200px;
-    background-color: $terneryColor;
     border-radius: 10px;
+    @include respon(phone) {
+      margin-top: 2rem;
+    }
+
+    .poster {
+      height: 350px;
+      border-radius: 1rem;
+      box-shadow: $shadow-card;
+    }
   }
 }

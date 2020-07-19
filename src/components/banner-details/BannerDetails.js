@@ -1,4 +1,5 @@
 import React from "react";
+import Poster from "../../assets/poster.jpg";
 import "./BannerDetails.scss";
 
 const BannerDetails = () => {
@@ -38,7 +39,9 @@ const BannerDetails = () => {
           new immortal.
         </p>
       </div>
-      <div className="banner-poster"></div>
+      <div className="banner-poster">
+        <img src={Poster} alt="movie poster" className="poster" />
+      </div>
     </div>
   );
 };
