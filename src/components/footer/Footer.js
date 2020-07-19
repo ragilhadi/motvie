@@ -23,20 +23,22 @@ const Footer = () => {
       </div>
       <div className="contact">
         <h3>Contact Me</h3>
-        <ul>
-          <li>
-            <a>Email</a>
-          </li>
-          <li>
-            <a>Twitter</a>
-          </li>
-          <li>
-            <a>Linkedin</a>
-          </li>
-          <li>
-            <a>Github</a>
-          </li>
-        </ul>
+        <div className="socmed">
+          <ul>
+            <li>
+              <a>Email</a>
+            </li>
+            <li>
+              <a>Twitter</a>
+            </li>
+            <li>
+              <a>Linkedin</a>
+            </li>
+            <li>
+              <a>Github</a>
+            </li>
+          </ul>
+        </div>
         <p>Created by Ragil Prasetyo</p>
       </div>
     </div>

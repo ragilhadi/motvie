@@ -2,20 +2,30 @@
 
 .footer {
   background-color: $terneryColor;
-  padding: 2.5% 5%;
+  padding: 5% 5%;
   display: flex;
   justify-content: space-between;
   align-content: center;
+  @include respon(phone) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   h3 {
     color: $backgroundBase;
     font-size: $header-3;
     font-weight: 600;
     margin-bottom: 1.25rem;
+    @include respon(phone) {
+      margin-bottom: 0.75rem;
+    }
   }
 
   .moviedb {
     width: 150px;
+    @include respon(phone) {
+      width: 100%;
+    }
     .logo {
       width: 150px;
     }
@@ -23,6 +33,10 @@
 
   .description {
     width: 35%;
+    @include respon(phone) {
+      width: 100%;
+      margin-top: 1.25rem;
+    }
     p {
       color: $backgroundBase;
       word-break: break-word;
@@ -33,6 +47,17 @@
 
   .contact {
     position: relative;
+    @include respon(phone) {
+      width: 100%;
+      margin-top: 1.25rem;
+    }
+
+    .socmed {
+      width: 100%;
+    }
+    ul {
+      width: 100%;
+    }
     a {
       color: $backgroundBase;
       font-weight: 400;
