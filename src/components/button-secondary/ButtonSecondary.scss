@@ -1,0 +1,11 @@
+@import "../../base.scss";
+
+.button-secondary {
+  box-shadow: $button-shadow;
+  background-color: transparent;
+  color: $terneryColor;
+  border: 2px solid $terneryColor;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}

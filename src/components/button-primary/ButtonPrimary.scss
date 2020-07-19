@@ -1,0 +1,11 @@
+@import "../../base.scss";
+
+.button-primary {
+  box-shadow: $button-shadow;
+  background-color: $terneryColor;
+  color: $backgroundBase;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
