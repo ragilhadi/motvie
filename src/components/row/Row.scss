@@ -1,0 +1,27 @@
+@import "../../base.scss";
+.row-container {
+  .title {
+    padding: 1rem 5%;
+    font-weight: $bold;
+    font-size: 1.75rem;
+    color: $textGray;
+
+    span {
+      font-weight: $medium;
+      font-size: 1.5rem;
+    }
+  }
+
+  .scroll-container {
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 0.75rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
