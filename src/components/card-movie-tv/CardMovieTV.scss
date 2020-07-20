@@ -3,18 +3,10 @@
 .card-movieTV {
   position: relative;
   border-radius: 0.75rem;
-  background-color: white;
   width: 100%;
   height: 100%;
   margin-right: 0.5rem;
   box-shadow: $shadow-card;
-  transition: transform 450s;
-
-  &:hover {
-    .poster {
-      transform: scale(1.05);
-    }
-  }
 
   .rating {
     position: absolute;
@@ -24,17 +16,39 @@
     padding: 0.5rem 0.75rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
     p {
       color: $backgroundBase;
       font-weight: 700;
     }
   }
 
+  .details {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    background-color: black;
+    opacity: 0.4;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+  }
+
   .poster {
-    object-fit: contain;
+    // object-fit: contain;
     width: 200px;
     max-height: 500px;
     border-radius: 0.75rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+      margin: 0 2rem;
+
+      .rating {
+        display: none;
+      }
+    }
   }
 }

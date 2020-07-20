@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <HighlightHome />
       <Row type="Netlix" genre="Originals" url={request.fetchNetflixOri} />
-      <Row type="Movies" genre="Trending" url={request.fetchTrending} />
+      <Row type="Discover" genre="Trending" url={request.fetchTrending} />
       <Footer />
     </div>
   );

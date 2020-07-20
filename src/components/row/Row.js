@@ -26,7 +26,8 @@ const Row = ({ type, genre, url }) => {
           <CardMovieTV
             key={data.id}
             image={data.poster_path}
-            name={data.name}
+            name={data.original_title}
+            vote={data.vote_average}
           />
         ))}
       </div>
