@@ -1,0 +1,67 @@
+@import "../../base.scss";
+
+.nav-shadow {
+  box-shadow: $shadow-card;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 5%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+
+  .section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo {
+    color: black;
+    margin-right: 5rem;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: $semi-bold;
+    }
+  }
+
+  .options {
+    display: flex;
+    a {
+      text-decoration: none;
+      margin-right: 2.5rem;
+      color: black;
+      font-weight: $medium;
+    }
+  }
+  .section-2 {
+    position: fixed;
+    right: 5%;
+  }
+}
+
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+  background-color: white;
+  padding: 0.75rem 0;
+  box-shadow: $shadow-card;
+
+  p {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+}

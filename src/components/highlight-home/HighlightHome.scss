@@ -5,64 +5,71 @@
   position: relative;
   border-radius: 1rem;
   box-shadow: $shadow-card;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    overflow: hidden;
+    transform: scale(1.015);
+  }
+}
 
-  .info {
-    position: absolute;
+.info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  height: 90%;
+  padding: 2.5% 5%;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+  @include respon(phone) {
+    width: 90%;
+  }
+
+  .description {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: $semi-bold;
+      margin-bottom: 1.25rem;
+      color: white;
+      @include respon(phone) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: $light;
+      color: white;
+      margin-bottom: 5rem;
+      @include respon(phone) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 50%;
-    height: 90%;
-    padding: 2.5% 5%;
-    z-index: 2;
-    @include respon(phone) {
-      width: 90%;
-    }
+    justify-content: flex-start;
 
-    .description {
-      h1 {
-        font-size: 2.5rem;
-        font-weight: $semi-bold;
-        margin-bottom: 1.25rem;
-        color: white;
-        @include respon(phone) {
-          font-size: 2rem;
-        }
-      }
-
-      p {
-        font-size: 1.25rem;
-        font-weight: $light;
-        color: white;
-        margin-bottom: 5rem;
-        @include respon(phone) {
-          font-size: 1rem;
-        }
-      }
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: flex-start;
-
-      .button-1 {
-        margin-right: 1.5rem;
-      }
+    .button-1 {
+      margin-right: 1.5rem;
     }
   }
+}
 
-  .overlay {
-    display: block;
-    position: absolute;
-    background-color: $textGray;
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-  }
-  .backdrop {
-    width: 100%;
-    height: 450px;
-    border-radius: 1rem;
-  }
+.overlay {
+  display: block;
+  position: absolute;
+  background-color: $textGray;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.backdrop {
+  width: 100%;
+  height: 450px;
+  border-radius: 1rem;
 }
