@@ -15,6 +15,9 @@
     height: 90%;
     padding: 2.5% 5%;
     z-index: 2;
+    @include respon(phone) {
+      width: 90%;
+    }
 
     .description {
       h1 {
@@ -22,6 +25,9 @@
         font-weight: $semi-bold;
         margin-bottom: 1.25rem;
         color: white;
+        @include respon(phone) {
+          font-size: 2rem;
+        }
       }
 
       p {
@@ -29,6 +35,9 @@
         font-weight: $light;
         color: white;
         margin-bottom: 5rem;
+        @include respon(phone) {
+          font-size: 1rem;
+        }
       }
     }
 
