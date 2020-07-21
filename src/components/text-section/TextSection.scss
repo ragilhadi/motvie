@@ -1,0 +1,16 @@
+@import "../../base.scss";
+
+.text-container {
+  padding: 2rem 5% 1rem;
+  .title {
+    font-size: 1.5rem;
+    color: $textBlack;
+    margin-bottom: 0.5rem;
+    font-weight: $semi-bold;
+  }
+  .subtitle {
+    font-size: 1rem;
+    color: $textGray;
+    font-weight: $regular;
+  }
+}

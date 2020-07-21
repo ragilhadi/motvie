@@ -18,9 +18,6 @@ const Row = ({ type, genre, url }) => {
   console.table(movies);
   return (
     <div className="row-container">
-      <h1 className="title">
-        {type} - <span>{genre}</span>
-      </h1>
       <div className="scroll-container">
         {movies.map((data) => (
           <CardMovieTV
