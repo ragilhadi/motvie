@@ -5,6 +5,7 @@ import request from "../../api/request";
 import "./Homepage.scss";
 import background from "../../assets/home.png";
 import TextSection from "../../components/text-section/TextSection";
+import CardLanscape from "../../components/card-landscape/CardLanscape";
 
 const Homepage = () => {
   return (
@@ -43,6 +44,11 @@ const Homepage = () => {
           subtitle="Discover your favorite category of section"
         />
         <Selection />
+        <TextSection
+          title="Trending Movies & TV Shows"
+          subtitle="Discover your favorite category of section"
+        />
+        <CardLanscape />
       </div>
     </>
   );
