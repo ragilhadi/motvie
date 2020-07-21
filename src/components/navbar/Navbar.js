@@ -7,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 200) {
         setshadow(true);
       } else setshadow(false);
     });

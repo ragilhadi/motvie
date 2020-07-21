@@ -2,6 +2,7 @@
 
 .nav-shadow {
   box-shadow: $shadow-card;
+  background-color: white;
 }
 
 .navbar-container {
@@ -14,7 +15,6 @@
   z-index: 5;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
   transition: all 0.5s;
   transition-timing-function: ease-in;
 
@@ -24,10 +24,10 @@
     justify-content: flex-start;
   }
   .logo {
-    color: black;
+    color: $primaryColor;
     margin-right: 5rem;
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: $semi-bold;
     }
   }
@@ -37,7 +37,7 @@
     a {
       text-decoration: none;
       margin-right: 2.5rem;
-      color: black;
+      color: white;
       font-weight: $medium;
     }
   }
