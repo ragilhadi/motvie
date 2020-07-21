@@ -1,7 +1,8 @@
-$backgroundBase: #f4f6ff;
-$terneryColor: #fbd46d;
-$textGray: #7b7b7b;
-$lightbackground: #fff;
+$primaryColor: #ff5a5f;
+$backgroundBase: white;
+$textBlack: #484848;
+$textGray: #767676;
+$darkBackground: #f7f7f7;
 
 $thin: 100;
 $extra-light: 200;
@@ -10,6 +11,8 @@ $regular: 400;
 $medium: 500;
 $semi-bold: 600;
 $bold: 700;
+
+$rounded: 1rem;
 
 $header-3: 1.25rem;
 $shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1),

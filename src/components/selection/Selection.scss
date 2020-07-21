@@ -18,14 +18,13 @@
     }
 
     .logo {
-      color: red;
-      display: inline;
+      color: $primaryColor;
       margin-right: 1.5rem;
     }
 
     p {
-      color: black;
-      display: inline;
+      color: $textBlack;
+      font-weight: $regular;
     }
   }
 }

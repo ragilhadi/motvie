@@ -8,20 +8,6 @@
   margin-right: 0.5rem;
   box-shadow: $shadow-card;
 
-  .rating {
-    position: absolute;
-    top: 5%;
-    left: 0;
-    background-color: $terneryColor;
-    padding: 0.5rem 0.75rem;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    p {
-      color: $backgroundBase;
-      font-weight: 700;
-    }
-  }
-
   .details {
     width: 100%;
     bottom: 0;

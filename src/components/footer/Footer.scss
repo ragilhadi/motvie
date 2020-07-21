@@ -1,7 +1,7 @@
 @import "../../base.scss";
 
 .footer {
-  background-color: $terneryColor;
+  background-color: $darkBackground;
   padding: 5% 5%;
   display: flex;
   justify-content: space-between;
@@ -13,9 +13,9 @@
   }
 
   h3 {
-    color: $backgroundBase;
+    color: $textBlack;
     font-size: $header-3;
-    font-weight: 600;
+    font-weight: $semi-bold;
     margin-bottom: 1.25rem;
     @include respon(phone) {
       margin-bottom: 0.75rem;
@@ -39,9 +39,9 @@
       margin-top: 1.25rem;
     }
     p {
-      color: $backgroundBase;
+      color: $textGray;
       word-break: break-word;
-      font-weight: 400;
+      font-weight: $regular;
       font-size: 1rem;
     }
   }
@@ -60,11 +60,12 @@
       width: 100%;
     }
     a {
-      color: $backgroundBase;
-      font-weight: 400;
+      color: $textGray;
+      font-weight: $regular;
     }
     p {
-      color: $backgroundBase;
+      color: $textGray;
+      font-weight: $regular;
       position: absolute;
       bottom: 0;
       right: 0;
