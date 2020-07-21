@@ -7,6 +7,12 @@
   overflow: hidden;
   height: 230px;
   box-shadow: $shadow-card;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   .image {
     width: 100%;
