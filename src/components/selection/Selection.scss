@@ -1,0 +1,31 @@
+@import "../../base.scss";
+
+.selection-container {
+  padding: 3rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .selction-option {
+    display: flex;
+    width: 20%;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    box-shadow: $shadow-card;
+    border-radius: 0.75rem;
+
+    &:hover {
+    }
+
+    .logo {
+      color: red;
+      display: inline;
+      margin-right: 1.5rem;
+    }
+
+    p {
+      color: black;
+      display: inline;
+    }
+  }
+}

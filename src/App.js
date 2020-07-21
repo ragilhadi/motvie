@@ -3,6 +3,7 @@ import Footer from "./components/footer/Footer";
 import Row from "./components/row/Row";
 import request from "./api/request";
 import Navbar from "./components/navbar/Navbar";
+import Selection from "./components/selection/Selection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Row type="Netlix" genre="Originals" url={request.fetchNetflixOri} />
       <Row type="Discover" genre="Trending" url={request.fetchTrending} />
+      <Selection />
       <Footer />
     </div>
   );
