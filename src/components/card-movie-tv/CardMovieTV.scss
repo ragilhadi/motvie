@@ -1,24 +1,10 @@
 @import "../../base.scss";
 
 .card-movieTV {
-  position: relative;
   border-radius: 0.75rem;
   width: 100%;
   height: 100%;
   margin-right: 0.5rem;
-  box-shadow: $shadow-card;
-
-  .details {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    display: flex;
-    background-color: black;
-    opacity: 0.4;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: white;
-  }
 
   .poster {
     // object-fit: contain;
@@ -27,6 +13,7 @@
     border-radius: 0.75rem;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    box-shadow: $shadow-card;
 
     &:hover {
       transform: scale(1.2);

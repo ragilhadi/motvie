@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
       <div className="copyright">
         <p className="one">Design & Develop by Ragil Prasetyo</p>
-        <p className="two">Created during Quarantine &copy; 2020</p>
+        <p className="two">Created during Quarantine 2020</p>
       </div>
     </>
   );
