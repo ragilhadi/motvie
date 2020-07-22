@@ -1,10 +1,38 @@
 @import "../../base.scss";
 
 .banner {
+  position: relative;
+}
+
+.fadebackground {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  z-index: 3;
+}
+
+.linierGradient {
+  background: linear-gradient(
+    90deg,
+    rgba(118, 118, 118, 0.78) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.flexbox {
+  position: relative;
+  z-index: 2;
+  padding: 5% 5% 2%;
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 2.5% 5%;
+  height: 60vh;
   @include respon(phone) {
     flex-direction: column;
   }
@@ -16,6 +44,7 @@
     }
 
     .title {
+      color: white;
       font-size: 3rem;
       font-weight: 700;
 
@@ -37,6 +66,7 @@
       align-items: center;
 
       &__text {
+        color: white;
         font-weight: 500;
         margin-left: 0.5rem;
         margin-right: 2rem;
@@ -65,6 +95,7 @@
       &__text {
         color: black;
         margin-left: 1rem;
+        color: white;
         font-weight: 700;
         @include respon(phone) {
           font-size: 1rem;
@@ -78,11 +109,11 @@
     .little-circle {
       height: 1rem;
       width: 1rem;
-      background-color: $terneryColor;
+      background-color: $primaryColor;
       border-radius: 9999px;
     }
     .rounded-icon {
-      background-color: $terneryColor;
+      background-color: $primaryColor;
       display: flex;
       height: 4rem;
       width: 4rem;
@@ -97,6 +128,7 @@
       p {
         font-size: 1.25rem;
         font-weight: 700;
+        color: white;
         @include respon(phone) {
           font-size: 1rem;
         }
@@ -107,6 +139,7 @@
       margin-top: 3rem;
       font-size: 1.2rem;
       font-weight: 500;
+      color: white;
     }
   }
 
