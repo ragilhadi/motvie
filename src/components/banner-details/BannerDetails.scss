@@ -144,6 +144,7 @@
   }
 
   .banner-poster {
+    object-fit: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,9 +155,15 @@
     }
 
     .poster {
+      object-fit: contain;
       height: 350px;
       border-radius: 1rem;
       box-shadow: $shadow-card;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }

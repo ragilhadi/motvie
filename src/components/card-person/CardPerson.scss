@@ -4,18 +4,25 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 270px;
+  min-width: 200px;
+  min-height: 270px;
   background-color: white;
   position: relative;
   box-shadow: $shadow-card;
   border-radius: 0.375rem;
-  margin: 5%;
+  margin-right: 0.75rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+    margin: 0 2rem;
+  }
 
   .details {
     position: absolute;
     width: 100%;
-    background-color: $terneryColor;
+    background-color: $primaryColor;
     color: $backgroundBase;
     bottom: 0;
     left: 0;

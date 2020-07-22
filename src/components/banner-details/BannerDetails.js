@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Poster from "../../assets/poster.jpg";
 import "./BannerDetails.scss";
 import axios from "../../api/axios";
 
@@ -8,7 +7,7 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 const BannerDetails = ({ id }) => {
   const [movie, setmovie] = useState([]);
   const url =
-    "https://api.themoviedb.org/3/movie/413417?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
+    "https://api.themoviedb.org/3/movie/509967?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
 
   useEffect(() => {
     async function fetchData() {

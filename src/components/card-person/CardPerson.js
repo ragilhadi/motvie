@@ -1,13 +1,20 @@
 import React from "react";
 import "./CardPerson.scss";
 
-const CardPerson = () => {
+const CardPerson = ({ photo, name, character }) => {
+  const base_url = "https://image.tmdb.org/t/p/original/";
   return (
-    <div className="card-person">
-      {/* <img /> */}
+    <div
+      className="card-person"
+      style={{
+        backgroundSize: "cover",
+        backgroundImage: `url(${base_url}${photo})`,
+        backgroundPosition: "iherit",
+      }}
+    >
       <div className="details">
-        <p className="name-cast">Josh Radnor</p>
-        <p className="name-real">Ted Mosby</p>
+        <p className="name-cast">{name}</p>
+        <p className="name-real">{character}</p>
       </div>
     </div>
   );
