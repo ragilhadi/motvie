@@ -1,0 +1,44 @@
+@import "../../base.scss";
+
+.card-playing {
+  position: relative;
+  border-radius: $rounded;
+  min-width: 250px;
+  overflow: hidden;
+  min-height: 330px;
+  box-shadow: $shadow-card;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.08);
+    margin: 0 1.5rem;
+  }
+
+  .image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .details-card {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 0.75rem 1rem;
+
+    .title {
+      color: $textBlack;
+      font-size: 1rem;
+      font-weight: $semi-bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: $textGray;
+      font-size: 0.75rem;
+      font-weight: $light;
+    }
+  }
+}

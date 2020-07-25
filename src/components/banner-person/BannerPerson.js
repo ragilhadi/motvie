@@ -7,7 +7,7 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 const BannerPerson = () => {
   const [person, setperson] = useState([]);
   const url =
-    "https://api.themoviedb.org/3/person/1136406?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
+    "https://api.themoviedb.org/3/person/10990?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(url);

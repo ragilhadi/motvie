@@ -1,7 +1,7 @@
 @import "../../base.scss";
 
 .banner {
-  padding: 5rem 5%;
+  padding: 5rem 5% 0;
   color: $textBlack;
   .flexbox {
     display: flex;
@@ -12,9 +12,6 @@
   }
   .poster {
     object-fit: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: inherit;
     margin-right: 2.5rem;
     .poster_image {
@@ -36,7 +33,7 @@
     h1 {
       font-weight: $bold;
       font-size: 2.5rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
     }
     .biography {
       h3 {
@@ -53,7 +50,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 0.75rem;
+      margin-top: 1.5rem;
       .detail {
         h4 {
           font-weight: $medium;
