@@ -1,0 +1,70 @@
+@import "../../base.scss";
+
+.banner {
+  padding: 5rem 5%;
+  color: $textBlack;
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .poster {
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    margin-right: 2.5rem;
+    .poster_image {
+      object-fit: contain;
+      height: 370px;
+      border-radius: 1rem;
+      box-shadow: $shadow-card;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    h1 {
+      font-weight: $bold;
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .biography {
+      h3 {
+        font-weight: $medium;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-weight: $regular;
+        font-size: 1rem;
+      }
+    }
+    .additional {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.75rem;
+      .detail {
+        h4 {
+          font-weight: $medium;
+          font-size: 1.25rem;
+          margin-bottom: 0.25rem;
+        }
+        p {
+          font-weight: $regular;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

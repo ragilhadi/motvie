@@ -3,15 +3,17 @@
 .card-lanscape {
   position: relative;
   border-radius: $rounded;
-  width: 420px;
+  min-width: 420px;
   overflow: hidden;
-  height: 230px;
+  min-height: 180px;
   box-shadow: $shadow-card;
+  margin-right: 1rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
+    margin: 0 1.5rem;
   }
 
   .image {

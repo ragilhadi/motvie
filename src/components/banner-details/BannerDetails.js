@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./BannerDetails.scss";
 import axios from "../../api/axios";
+import { MdPlayArrow } from "react-icons/md";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
 const BannerDetails = ({ id }) => {
   const [movie, setmovie] = useState([]);
   const url =
-    "https://api.themoviedb.org/3/movie/509967?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
+    "https://api.themoviedb.org/3/movie/299536?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
 
   useEffect(() => {
     async function fetchData() {
@@ -18,6 +19,10 @@ const BannerDetails = ({ id }) => {
     }
     fetchData();
   }, [url]);
+
+  function trimString(s, n) {
+    return s.substring(0, n);
+  }
 
   return (
     <div
@@ -31,7 +36,10 @@ const BannerDetails = ({ id }) => {
       <div className="flexbox">
         <div className="banner-details">
           <h1 className="title">
-            {movie.title} <span className="year">{movie.release_date}</span>
+            {movie.title}{" "}
+            <span className="year">
+              {trimString(String(movie.release_date), 4)}
+            </span>
           </h1>
           <div className="genre-duration">
             <div className="genre-duration-detail">
@@ -52,7 +60,7 @@ const BannerDetails = ({ id }) => {
             </div>
             <div className="rating-trailer-detail">
               <div className="rounded-icon">
-                <p>7.4</p>
+                <MdPlayArrow className="play-icon" />
               </div>
               <p className="rating-trailer-detail__text">Play Trailer</p>
             </div>

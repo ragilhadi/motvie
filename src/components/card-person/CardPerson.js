@@ -3,6 +3,13 @@ import "./CardPerson.scss";
 
 const CardPerson = ({ photo, name, character }) => {
   const base_url = "https://image.tmdb.org/t/p/original/";
+  function trimString(string, n) {
+    if (string.length > n) {
+      return string.substring(0, n) + "...";
+    } else {
+      return string.substring(0, n);
+    }
+  }
   return (
     <div
       className="card-person"
@@ -13,8 +20,8 @@ const CardPerson = ({ photo, name, character }) => {
       }}
     >
       <div className="details">
-        <p className="name-cast">{name}</p>
-        <p className="name-real">{character}</p>
+        <p className="name-cast">{trimString(name, 20)}</p>
+        <p className="name-real">{trimString(character, 20)}</p>
       </div>
     </div>
   );

@@ -28,7 +28,7 @@
 .flexbox {
   position: relative;
   z-index: 2;
-  padding: 5% 5% 2%;
+  padding: 6% 5% 2%;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -120,15 +120,22 @@
       align-items: center;
       justify-content: center;
       border-radius: 9999px;
-      color: $backgroundBase;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
       @include respon(phone) {
         height: 3rem;
         width: 3rem;
       }
+
+      &:hover {
+        transform: scale(1.05);
+        color: $primaryColor;
+        background-color: white;
+      }
       p {
         font-size: 1.25rem;
         font-weight: 700;
-        color: white;
         @include respon(phone) {
           font-size: 1rem;
         }
@@ -166,4 +173,9 @@
       }
     }
   }
+}
+
+.play-icon {
+  width: 35px;
+  height: 35px;
 }

@@ -48,7 +48,6 @@ const Homepage = () => {
           title="Trending Movies & TV Shows"
           subtitle="Discover your favorite category of section"
         />
-        <CardLanscape />
       </div>
     </>
   );
