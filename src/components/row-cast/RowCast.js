@@ -6,13 +6,12 @@ import CardPerson from "../card-person/CardPerson";
 const RowCast = () => {
   const [cast, setCast] = useState([]);
   const url =
-    "https://api.themoviedb.org/3/movie/299536/credits?api_key=8331c0e63f02372a473a46db041c13db";
+    "https://api.themoviedb.org/3/movie/299534/credits?api_key=8331c0e63f02372a473a46db041c13db";
 
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(url);
       setCast(request.data.cast);
-      console.log(request.data.cast);
       return request;
     }
     fetchData();
