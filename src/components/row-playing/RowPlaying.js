@@ -21,6 +21,7 @@ const RowPlaying = () => {
         {playas.map((data) => (
           <CardPlaying
             key={data.cast_id}
+            movie={data.original_title}
             poster={data.poster_path}
             character={data.character}
           />

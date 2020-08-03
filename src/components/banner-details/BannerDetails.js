@@ -14,7 +14,6 @@ const BannerDetails = ({ id }) => {
     async function fetchData() {
       const request = await axios.get(url);
       setmovie(request.data);
-      console.log(request.data);
       return request;
     }
     fetchData();
