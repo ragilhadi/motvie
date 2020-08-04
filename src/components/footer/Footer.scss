@@ -7,7 +7,11 @@
   justify-content: space-between;
   align-content: center;
   margin-top: 3rem;
-  @include respon(phone) {
+  @include respon(phone-pot) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include respon(phone-land) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -17,14 +21,22 @@
     font-size: $header-3;
     font-weight: $semi-bold;
     margin-bottom: 1.25rem;
-    @include respon(phone) {
+    @include respon(phone-pot) {
       margin-bottom: 0.75rem;
+      margin-top: 1rem;
+    }
+    @include respon(phone-land) {
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
     }
   }
 
   .moviedb {
     width: 150px;
-    @include respon(phone) {
+    @include respon(phone-pot) {
+      width: 100%;
+    }
+    @include respon(phone-land) {
       width: 100%;
     }
     .logo {
@@ -34,7 +46,11 @@
 
   .description {
     width: 35%;
-    @include respon(phone) {
+    @include respon(phone-pot) {
+      width: 100%;
+      margin-top: 1.25rem;
+    }
+    @include respon(phone-land) {
       width: 100%;
       margin-top: 1.25rem;
     }
@@ -48,7 +64,11 @@
 
   .contact {
     position: relative;
-    @include respon(phone) {
+    @include respon(phone-pot) {
+      width: 100%;
+      margin-top: 1.25rem;
+    }
+    @include respon(phone-land) {
       width: 100%;
       margin-top: 1.25rem;
     }

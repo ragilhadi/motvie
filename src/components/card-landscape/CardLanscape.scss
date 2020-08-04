@@ -10,6 +10,10 @@
   margin-right: 1rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  @include respon(phone-pot) {
+    min-height: 200px;
+    min-width: 300px;
+  }
 
   &:hover {
     transform: scale(1.08);
@@ -33,12 +37,18 @@
       font-size: 1rem;
       font-weight: $semi-bold;
       margin-bottom: 0.5rem;
+      @include respon(phone-pot) {
+        font-size: 1rem;
+      }
     }
 
-    .subtitle {
+    .description {
       color: $textGray;
-      font-size: 0.75rem;
+      font-size: 1rem;
       font-weight: $light;
+      @include respon(phone-pot) {
+        font-size: 0.75rem;
+      }
     }
   }
 }

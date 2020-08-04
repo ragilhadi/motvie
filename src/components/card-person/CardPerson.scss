@@ -13,6 +13,10 @@
   margin-right: 0.75rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  @include respon(phone-pot) {
+    min-width: 150px;
+    min-height: 230px;
+  }
 
   &:hover {
     transform: scale(1.2);
@@ -31,9 +35,15 @@
     .name-cast {
       font-weight: 600;
       margin-bottom: 0.5rem;
+      @include respon(phone-pot) {
+        font-size: 0.8rem;
+      }
     }
     .name-real {
       font-weight: 400;
+      @include respon(phone-pot) {
+        font-size: 0.7rem;
+      }
     }
   }
 }

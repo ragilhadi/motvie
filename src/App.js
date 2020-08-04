@@ -5,11 +5,12 @@ import Homepage from "./views/home/Homepage";
 import DetailMovieTv from "./views/details-movie-tv/DetailMovieTv";
 import { Route, Switch, HashRouter } from "react-router-dom";
 import DetailPerson from "./views/detail-person/DetailPerson";
+import "./app.css";
 
 function App() {
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
-      <React.Fragment>
+      <div className="App">
         <Navbar />
         <Switch>
           <Route path="/" component={Homepage} exact />
@@ -17,7 +18,7 @@ function App() {
           <Route path="/person" component={DetailPerson} />
         </Switch>
         <Footer />
-      </React.Fragment>
+      </div>
     </HashRouter>
   );
 }

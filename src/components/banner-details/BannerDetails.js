@@ -8,7 +8,7 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 const BannerDetails = ({ id }) => {
   const [movie, setmovie] = useState([]);
   const url =
-    "https://api.themoviedb.org/3/movie/299534?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
+    "https://api.themoviedb.org/3/movie/363088?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
 
   useEffect(() => {
     async function fetchData() {
@@ -37,7 +37,7 @@ const BannerDetails = ({ id }) => {
           <h1 className="title">
             {movie.title}{" "}
             <span className="year">
-              ({trimString(String(movie.release_date), 4)})
+              {trimString(String(movie.release_date), 4)}
             </span>
           </h1>
           <div className="genre-duration">

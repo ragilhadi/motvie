@@ -14,6 +14,10 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     box-shadow: $shadow-card;
+    @include respon(phone-pot) {
+      width: 170px;
+      max-height: 450px;
+    }
 
     &:hover {
       transform: scale(1.2);

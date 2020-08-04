@@ -5,18 +5,15 @@ import request from "../../api/request";
 import "./Homepage.scss";
 import background from "../../assets/home.png";
 import TextSection from "../../components/text-section/TextSection";
-import CardLanscape from "../../components/card-landscape/CardLanscape";
 
 const Homepage = () => {
   return (
     <>
       <div
-        style={{
-          backgroundSize: "cover",
-          backgroundImage: `url(${background})`,
-          backgroundPosition: "center center",
-        }}
         className="backdrop-home"
+        style={{
+          backgroundImage: `url(${background})`,
+        }}
       >
         <div className="header">
           <h1>

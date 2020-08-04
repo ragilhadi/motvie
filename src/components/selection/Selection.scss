@@ -5,6 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include respon(phone-pot) {
+    flex-direction: column;
+  }
+  @include respon(phone-land) {
+    flex-direction: column;
+  }
 
   .selction-option {
     display: flex;
@@ -19,10 +25,24 @@
     border-radius: 0.75rem;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    @include respon(phone-pot) {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+    @include respon(phone-land) {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
 
     &:hover {
       transform: scale(1.08);
       margin: 0 1.25rem;
+      @include respon(phone-pot) {
+        margin: 1.25rem 0;
+      }
+      @include respon(phone-land) {
+        margin: 1.25rem 0;
+      }
     }
 
     .logo {
