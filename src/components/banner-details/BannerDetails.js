@@ -37,7 +37,7 @@ const BannerDetails = ({ id }) => {
           <h1 className="title">
             {movie.title}{" "}
             <span className="year">
-              {trimString(String(movie.release_date), 4)}
+              ({trimString(String(movie.release_date), 4)})
             </span>
           </h1>
           <div className="genre-duration">

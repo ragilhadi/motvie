@@ -1,6 +1,7 @@
 @import "../../base.scss";
 
 .banner {
+  padding: 5rem 5% 0;
   position: relative;
   height: 70vh;
   @include respon(phone-pot) {
@@ -72,7 +73,6 @@
 .flexbox {
   position: relative;
   z-index: 3;
-  padding: 6% 5% 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
@@ -178,7 +178,7 @@
       }
       @include respon(tb-pot) {
         margin-top: 1.5rem;
-        justify-content: space-between;
+        justify-content: space-around;
       }
     }
     .rating-trailer-detail {
@@ -303,4 +303,14 @@
 .play-icon {
   width: 35px;
   height: 35px;
+}
+
+.banner {
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
