@@ -2,20 +2,43 @@
 
 .backdrop-home {
   background-size: cover;
-  background-position: center;
+  background-position: center 80%;
   position: relative;
   object-fit: contain;
   width: 100%;
   height: 85vh;
   margin-bottom: 1rem;
   @include respon(phone-pot) {
-    background-size: cover;
-    background-position: 50% 95%;
+    background-size: inherit;
+    background-position-x: center;
+    background-position-y: 0;
+    height: 100vh;
+  }
+  @include respon(phone-land) {
+    background-size: inherit;
+    background-position-x: center;
+    background-position-y: 0;
+    height: 100vh;
+  }
+  @include respon(tb-pot) {
+    background-size: inherit;
+    background-position-x: center;
+    background-position-y: 0;
+    height: 100vh;
   }
 
   .header {
     padding: 11rem 5%;
     color: white;
+    @include respon(phone-pot) {
+      padding: 7rem 5%;
+    }
+    @include respon(phone-land) {
+      padding: 7rem 5%;
+    }
+    @include respon(tb-pot) {
+      padding: 7.5rem 5%;
+    }
 
     h1 {
       font-size: 2.6rem;
@@ -23,13 +46,14 @@
       @include respon(phone-pot) {
         display: inline-block;
         font-size: 2rem;
-        text-align: center;
-        background: rgba(247, 247, 247, 0.3);
-        padding: 1rem;
       }
       @include respon(phone-land) {
+        display: inline-block;
         font-size: 2.25rem;
-        text-align: center;
+      }
+      @include respon(tb-pot) {
+        display: inline-block;
+        font-size: 2.5rem;
       }
 
       .important {

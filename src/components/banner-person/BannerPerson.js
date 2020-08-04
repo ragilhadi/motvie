@@ -18,8 +18,8 @@ const BannerPerson = () => {
     fetchData();
   }, [url]);
   return (
-    <div className="banner">
-      <div className="flexbox">
+    <div className="person">
+      <div className="person-container">
         <div className="poster">
           <img
             src={`${base_url}${person.profile_path}`}
