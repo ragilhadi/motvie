@@ -27,24 +27,30 @@ const Homepage = () => {
       </div>
       <div>
         <TextSection
-          title="Trending Movies & TV Shows"
+          title="Netflix Original"
           subtitle="Discover your favorite category of section"
         />
-        <Row type="Netlix" genre="Originals" url={request.fetchNetflixOri} />
+        <Row url={request.fetchNetflixOri} />
         <TextSection
           title="Trending Movies & TV Shows"
           subtitle="Discover your favorite category of section"
         />
-        <Row type="Discover" genre="Trending" url={request.fetchTrending} />
+        <Row url={request.fetchTrending} />
         <TextSection
           title="Trending Movies & TV Shows"
           subtitle="Discover your favorite category of section"
         />
         <Selection />
         <TextSection
-          title="Trending Movies & TV Shows"
+          title="Movies Now Playing"
           subtitle="Discover your favorite category of section"
         />
+        <Row url={request.fetchMoviePlaying} />
+        <TextSection
+          title="Movies Upcoming"
+          subtitle="Discover your favorite category of section"
+        />
+        <Row url={request.fetchMovieUpcoming} />
       </div>
     </>
   );

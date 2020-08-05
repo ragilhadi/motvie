@@ -6,6 +6,10 @@
   height: 100%;
   margin-right: 0.5rem;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   .poster {
     // object-fit: contain;
     width: 200px;
