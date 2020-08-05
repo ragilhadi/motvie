@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [shadow, setshadow] = useState(false);
@@ -17,7 +18,9 @@ const Navbar = () => {
   return (
     <div className={`navbar-container ${shadow && "nav-shadow"}`}>
       <div className="logo">
-        <h1>Motvie</h1>
+        <Link to="/" className="motvie">
+          Motvie
+        </Link>
       </div>
       <div className="section-2">
         <input />

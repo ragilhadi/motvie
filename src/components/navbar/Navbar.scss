@@ -26,8 +26,10 @@
   .logo {
     color: $primaryColor;
     margin-right: 5rem;
-    h1 {
+    .motvie {
       font-size: 2rem;
+      text-decoration: none;
+      color: $primaryColor;
       font-weight: $semi-bold;
     }
   }
