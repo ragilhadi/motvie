@@ -15,7 +15,6 @@ const Row = ({ type, genre, url }) => {
     fetchData();
   }, [url]);
 
-  console.table(movies);
   return (
     <div className="row-container">
       <div className="scroll-container">

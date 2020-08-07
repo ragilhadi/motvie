@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import Searchbar from "../search/Searchbar";
 
 const Navbar = () => {
   const [shadow, setshadow] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="section-2">
-        <input />
+        <Searchbar />
       </div>
     </div>
   );

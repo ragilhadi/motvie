@@ -1,0 +1,66 @@
+@import "../../base.scss";
+
+.search-container {
+  position: relative;
+  width: 350px;
+  display: flex;
+  overflow: hidden;
+}
+input::placeholder {
+  color: white;
+}
+.search-bar {
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  font-size: 1rem;
+  //   border: 1px solid #d0cfce;
+  border: 1px solid white;
+  background-color: transparent;
+  outline: none;
+
+  &:focus {
+    border: 1px solid $primaryColor;
+    transition: 0.35s ease;
+    color: $textBlack;
+    &::-webkit-input-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+    &:-ms-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+  }
+}
+
+.icon-search {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 7px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $primaryColor;
+    transform: scale(1.1);
+  }
+}
+
+.transparent {
+  border: 1px solid #d0cfce;
+
+  ::placeholder {
+    color: #a9a9a9;
+  }
+}
+
+.icon-colorized {
+  color: $textBlack;
+}
