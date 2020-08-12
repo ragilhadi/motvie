@@ -23,6 +23,7 @@ const Row = ({ type, genre, url }) => {
             key={data.id}
             image={data.poster_path}
             name={data.original_title}
+            id={data.id}
             vote={data.vote_average}
           />
         ))}

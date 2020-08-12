@@ -7,18 +7,18 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 
 const BannerDetails = ({ id }) => {
   const [movie, setmovie] = useState([]);
-  const url =
-    "https://api.themoviedb.org/3/movie/363088?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
+  const [genres, setGenres] = useState([]);
+  const url = `https://api.themoviedb.org/3/movie/${id}?api_key=8331c0e63f02372a473a46db041c13db&language=en-US`;
 
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(url);
       setmovie(request.data);
+      setGenres(request.data.genres);
       return request;
     }
     fetchData();
   }, [url]);
-
   function trimString(s, n) {
     return s.substring(0, n);
   }
@@ -35,7 +35,7 @@ const BannerDetails = ({ id }) => {
       <div className="flexbox">
         <div className="banner-details">
           <h1 className="title">
-            {movie.title}{" "}
+            {movie.title}
             <span className="year">
               ({trimString(String(movie.release_date), 4)})
             </span>
@@ -43,7 +43,9 @@ const BannerDetails = ({ id }) => {
           <div className="genre-duration">
             <div className="genre-duration-detail">
               <div className="little-circle"></div>
-              <p className="genre-duration-detail__text">{`${movie.genres}`}</p>
+              {genres.map((data) => (
+                <p className="genre-duration-detail__text__genre">{`${data.name}`}</p>
+              ))}
             </div>
             <div className="genre-duration-detail">
               <div className="little-circle"></div>

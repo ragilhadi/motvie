@@ -55,6 +55,9 @@ input::placeholder {
 
 .transparent {
   border: 1px solid #d0cfce;
+  &:focus {
+    color: $textBlack;
+  }
 
   ::placeholder {
     color: #a9a9a9;

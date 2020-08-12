@@ -16,7 +16,7 @@ const Searchbar = () => {
     };
   }, []);
   return (
-    <div className={`search-container ${style && "transparent"}`}>
+    <div className={`${style && "transparent"} search-container`}>
       <input
         type="text"
         className="search-bar"

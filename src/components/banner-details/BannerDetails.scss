@@ -160,6 +160,17 @@
         @include respon(tb-pot) {
           font-size: 1.25rem;
         }
+
+        &__genre {
+          font-weight: 500;
+          color: white;
+          margin-left: 0.5rem;
+          font-size: 1.25rem;
+          margin-right: 0rem;
+          &:last-child {
+            margin-right: 2rem;
+          }
+        }
       }
     }
 
