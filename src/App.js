@@ -3,23 +3,25 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Homepage from "./views/home/Homepage";
 import DetailMovieTv from "./views/details-movie-tv/DetailMovieTv";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import DetailPerson from "./views/detail-person/DetailPerson";
 import "./app.css";
+import ScrollToTop from "./components/helper/ScrollToTop";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <div className="App">
+        <ScrollToTop />
         <Navbar />
         <Switch>
           <Route path="/" component={Homepage} exact />
-          <Route path="/detail/" component={DetailMovieTv} />
-          <Route path="/person/" component={DetailPerson} />
+          <Route path="/detail/:id" component={DetailMovieTv} />
+          <Route path="/person/:id" component={DetailPerson} />
         </Switch>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

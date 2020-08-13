@@ -13,12 +13,12 @@ const DetailMovieTv = (props) => {
         title="Cast"
         subtitle="Discover your favorite category of section"
       />
-      <RowCast />
+      <RowCast id={identification} />
       <TextSection
         title="Reccomendation"
         subtitle="Discover your favorite category of section"
       />
-      <RowRecommended />
+      <RowRecommended id={identification} />
     </div>
   );
 };

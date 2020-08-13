@@ -9,7 +9,7 @@ const CardMovieTV = ({ image, name, id }) => {
     <div className="card-movieTV">
       <Link
         to={{
-          pathname: "/detail",
+          pathname: `/detail/${id}`,
           state: {
             identification: id,
           },
