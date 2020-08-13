@@ -5,7 +5,7 @@ import RowCast from "../../components/row-cast/RowCast";
 import RowRecommended from "../../components/row-recommended/RowRecommended";
 
 const DetailMovieTv = (props) => {
-  const { identification } = props.location.state;
+  const identification = props.match.params.id;
   return (
     <div>
       <BannerDetails id={identification} />
