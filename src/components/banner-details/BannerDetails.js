@@ -14,7 +14,9 @@ const BannerDetails = ({ id }) => {
     async function fetchData() {
       const request = await axios.get(url);
       setmovie(request.data);
-      setGenres(request.data.genres);
+      const genreSlice = request.data.genres;
+      const fixgenre = genreSlice.slice(0, 2);
+      setGenres(fixgenre);
       return request;
     }
     fetchData();

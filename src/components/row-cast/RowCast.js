@@ -21,6 +21,7 @@ const RowCast = ({ id }) => {
         {cast.map((data) => (
           <CardPerson
             key={data.cast_id}
+            id={data.id}
             photo={data.profile_path}
             character={data.character}
             name={data.name}

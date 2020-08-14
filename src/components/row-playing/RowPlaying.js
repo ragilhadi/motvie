@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "../../api/axios";
 import CardPlaying from "../card-playingas/CardPlaying";
 
-const RowPlaying = () => {
+const RowPlaying = ({ id }) => {
   const [playas, setPlayas] = useState([]);
-  const url =
-    "https://api.themoviedb.org/3/person/10990/combined_credits?api_key=8331c0e63f02372a473a46db041c13db&language=en-US";
+  const url = `https://api.themoviedb.org/3/person/${id}/combined_credits?api_key=8331c0e63f02372a473a46db041c13db&language=en-US`;
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(url);
