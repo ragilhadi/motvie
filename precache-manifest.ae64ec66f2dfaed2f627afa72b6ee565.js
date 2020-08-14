@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e394a5922950708c7d17a8f734dafba",
+    "revision": "80b6a2d97b62f012804dacb7c4783e6c",
     "url": "/motvie/index.html"
   },
   {
-    "revision": "6c332e5d1b8e262a95e9",
+    "revision": "a17aec725a315447974e",
     "url": "/motvie/static/css/main.99132a9b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/motvie/static/js/2.ec52bba5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6c332e5d1b8e262a95e9",
-    "url": "/motvie/static/js/main.fc28b049.chunk.js"
+    "revision": "a17aec725a315447974e",
+    "url": "/motvie/static/js/main.812fcd30.chunk.js"
   },
   {
     "revision": "0659fab6da01663b1e43",
