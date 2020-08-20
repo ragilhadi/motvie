@@ -23,6 +23,7 @@ const RowRecommended = ({ id }) => {
             photo={data.backdrop_path}
             overview={data.overview}
             name={data.original_title}
+            id={data.id}
           />
         ))}
       </div>

@@ -23,6 +23,7 @@ const RowPlaying = ({ id }) => {
             movie={data.original_title}
             poster={data.poster_path}
             character={data.character}
+            id={data.id}
           />
         ))}
       </div>
